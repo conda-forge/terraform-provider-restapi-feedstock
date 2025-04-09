@@ -1,6 +1,6 @@
 {% set provider = "restapi" %}
 {% set goname = "github.com/Mastercard/terraform-provider-"+provider.lower() %}
-{% set version = "1.20.0" %}
+{% set version = "2.0.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 29b63406b9876f8e12f433f4a9864d56983e0cdc1464d90f6f8521b1ff0beb4d
+  sha256: f44d548738cf755badd10a2411d8073df4f8fa1c9e797cab8926ae8cf41568d8
 
 build:
   number: 0
